@@ -134,3 +134,94 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
+/*----START HEADER------*/
+header {
+  width: 100%;
+  height: 30px;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3%;
+}
+header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+header nav a:hover {
+  border: 3px double black;
+  color: #005ce6;
+  padding: 0.5%;
+}
+/*END*/
+.content-1 {
+  border: 1px solid black;
+  background-color: #b3d1ff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  margin: 3% auto;
+  /*END section:first-child--------------*/
+}
+.content-1 section:first-child {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 4%;
+}
+.content-1 section:first-child img {
+  border: solid;
+  width: 45%;
+  height: 95%;
+}
+.content-1 section:first-child div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-1 section:first-child h1 {
+  border: 5px double;
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 10% 3%;
+  margin: 4% 0;
+}
+.content-1 section:first-child p {
+  font-size: 2.2rem;
+  padding: 10% 3%;
+  margin: 4% 0;
+}
+.content-1 section:last-child {
+  width: 90%;
+  margin: 0 auto 5%;
+  border: 5px double black;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 3%;
+  line-height: 2;
+}
+.content-1 section:last-child .button {
+  width: 20%;
+  font-size: 2rem;
+  background-color: #66a3ff;
+  margin: 3%;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.content-1 section:last-child .button:hover {
+  background-color: #005ce6;
+  color: white;
+}
