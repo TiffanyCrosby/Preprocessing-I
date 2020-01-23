@@ -1,3 +1,5 @@
+/*------VARIABLES------------*/
+/*-----------MIX-INS----------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -130,14 +132,14 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
 }
-html {
-  font-size: 62.5%;
-}
-/*----START HEADER------*/
+/*----START HEADER----------------------*/
 header {
   width: 100%;
   height: 30px;
@@ -158,18 +160,22 @@ header nav a:hover {
   color: #005ce6;
   padding: 0.5%;
 }
-/*END*/
+/*END Header*/
+/*-----------START Content 1--------------------*/
 .content-1 {
   border: 1px solid black;
   background-color: #b3d1ff;
   width: 90%;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   font-size: 2rem;
   margin: 3% auto;
+  /*start section:first child---------------*/
   /*END section:first-child--------------*/
+  /*start section:first-child--------------*/
+  /*end section:second-child---------*/
 }
 .content-1 section:first-child {
   width: 100%;
@@ -187,12 +193,12 @@ header nav a:hover {
 }
 .content-1 section:first-child div {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 .content-1 section:first-child h1 {
-  border: 5px double;
+  border: 5px double black;
   font-size: 3.6rem;
   text-align: center;
   padding: 10% 3%;
@@ -225,3 +231,52 @@ header nav a:hover {
   background-color: #005ce6;
   color: white;
 }
+/*END Content 1---------------------------*/
+/*------------START Content 2--------------*/
+.content-2 {
+  border: 1px solid black;
+  background-color: #b3d1ff;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  margin: 3% auto;
+  /*!!!!!!!!!! ?????? IS IT OK TO PUT SOME THINGS OUT OF ORDER---IMGS ARE TECHNICALLY IN THE SECTIONS ?????? !!!!!!!*/
+}
+.content-2 h3 {
+  border: 5px double black;
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 2% 10%;
+  margin: 4%;
+}
+.content-2 img {
+  border: solid;
+  width: 45%;
+  height: 95%;
+}
+.content-2 section:first-child {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-2 #middle-child {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.content-2 section:last-child {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*END Content 2------------------*/
