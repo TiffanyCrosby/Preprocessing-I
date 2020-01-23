@@ -205,6 +205,7 @@ header nav a:hover {
 .content-1 section:first-child h1 {
   border: 5px double black;
   font-size: 3.6rem;
+  font-weight: 600;
   text-align: center;
   padding: 10% 3%;
   margin: 4% 0;
@@ -251,12 +252,33 @@ header nav a:hover {
   margin: 3% auto;
   /*!!!!!!!!!! ?????? IS IT OK TO PUT SOME THINGS OUT OF ORDER---IMGS ARE TECHNICALLY IN THE SECTIONS ?????? !!!!!!!*/
 }
-.content-2 h3 {
+.content-2 div:first-child {
   border: 5px double black;
-  font-size: 2.4rem;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+.content-2 div:first-child h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
   text-align: center;
   padding: 2% 10%;
-  margin: 4%;
+}
+.content-2 div:first-child button {
+  width: 20%;
+  font-size: 2rem;
+  background-color: #66a3ff;
+  border: 3px double black;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.content-2 div:first-child button:hover {
+  background-color: #005ce6;
+  color: white;
 }
 .content-2 img {
   border: solid;
@@ -343,6 +365,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin: 3%;
+  font-weight: 400;
 }
 @media (max-width: 500px) {
   footer {
